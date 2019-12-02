@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # C++ objects and libs
 *.slo
 *.lo
@@ -43,3 +44,37 @@ target_wrapper.*
 
 # QtCreator CMake
 CMakeLists.txt.user*
+=======
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+>>>>>>> 0c97615fb05a0f233541c16de9b80e73233d446a
