@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/05a_feedback_sync.dir/src/advanced/05a_feedback_sync.cpp.o  -o bin/05a_feedback_sync  -L/home/zhonghang/innfos_actuator/innfos-cpp-sdk/example/../sdk/lib/linux_x86_64 -rdynamic -lActuatorController -lpthread libDeltaRobot.a -lActuatorController -lpthread -Wl,-rpath,/home/zhonghang/innfos_actuator/innfos-cpp-sdk/example/../sdk/lib/linux_x86_64 

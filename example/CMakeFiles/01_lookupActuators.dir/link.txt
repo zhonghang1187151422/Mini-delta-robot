@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/01_lookupActuators.dir/src/basic/01_lookupActuators.cpp.o  -o bin/01_lookupActuators  -L/home/zhonghang/innfos_actuator/innfos-cpp-sdk/example/../sdk/lib/linux_x86_64 -rdynamic -lActuatorController -lpthread libDeltaRobot.a -lActuatorController -lpthread -Wl,-rpath,/home/zhonghang/innfos_actuator/innfos-cpp-sdk/example/../sdk/lib/linux_x86_64 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdeltarobot.a  CMakeFiles/deltarobot.dir/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/deltarobot.cpp.o
-/usr/bin/ranlib libdeltarobot.a
