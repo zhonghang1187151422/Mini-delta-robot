@@ -11,7 +11,7 @@ linux ubuntu16.04
 ## 安装使用
 （1）将软件包下载到本地 <br>
 ```Bash
-git clone ***
+git clone https://github.com/zhonghang1187151422/Mini-delta-robot.git
 ```
 （2）在文件夹下打开终端，进入example目录，该目录下有CMakeLists.txt
 ```Bash
