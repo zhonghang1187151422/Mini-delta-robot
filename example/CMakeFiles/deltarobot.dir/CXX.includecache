@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../deltarobot/include/deltarobot.h
+vector
+-
+iostream
+-
+
+/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/deltarobot.cpp
+cmath
+-
+deltarobot.h
+/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/deltarobot.h
+

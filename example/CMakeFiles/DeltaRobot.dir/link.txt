@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDeltaRobot.a  CMakeFiles/DeltaRobot.dir/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/DeltaRobotKinematics.cpp.o CMakeFiles/DeltaRobot.dir/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/DeltaRobotMath.cpp.o CMakeFiles/DeltaRobot.dir/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/DeltaRobotControl.cpp.o CMakeFiles/DeltaRobot.dir/home/zhonghang/innfos_actuator/innfos-cpp-sdk/deltarobot/src/DeltaRobotMotionPlanning.cpp.o
+/usr/bin/ranlib libDeltaRobot.a

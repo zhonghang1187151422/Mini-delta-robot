@@ -25,15 +25,18 @@ int main(int argc, char *argv[])
     //If the size of the idArray is greater than zero, the connected actuators have been found
     if(idArray.size() > 0)
     {
-        //Enable an actuator
-        if(pController->enableActuator(idArray.at(0)))
+        for (auto Uid : idArray)
         {
-            cout << "Enable actuator " << (int)idArray.at(0) << " successfully!" << endl;
+            //Enable an actuator
+            if(pController->enableActuator(Uid))
+            {
+                cout << "Enable actuator " << (int)Uid << " successfully!" << endl;
+            }
+            //Disable an actuator
+            pController->disableActuator(Uid);
+            //insure that the actuator has been closed
+            this_thread::sleep_for(std::chrono::milliseconds(200));
         }
-        //Disable an actuator
-        pController->disableActuator(idArray.at(0));
-        //insure that the actuator has been closed
-        this_thread::sleep_for(std::chrono::milliseconds(200));
     }
     else
     {

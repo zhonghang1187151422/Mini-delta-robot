@@ -29,11 +29,11 @@ int main(int argc, char *argv[])
         //Activate current mode
         pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Cur);
 
-        cout << "set current to 0.6A" << endl;
-        pController->setCurrent(actuator.actuatorID,0.6);
+        cout << "set current to 2.6A" << endl;
+        pController->setCurrent(actuator.actuatorID,2.6);
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        cout << "set current to -0.6A" << endl;
-        pController->setCurrent(actuator.actuatorID,-0.6);
+        cout << "set current to -2.6A" << endl;
+        pController->setCurrent(actuator.actuatorID,-2.6);
         std::this_thread::sleep_for(std::chrono::seconds(1));
         //Disable all connected actuators
         pController->disableAllActuators();

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/03a_currentControl.dir/src/basic/03a_currentControl.cpp.o  -o bin/03a_currentControl  -L/home/zhonghang/innfos_actuator/innfos-cpp-sdk/example/../sdk/lib/linux_x86_64 -rdynamic -lActuatorController -lpthread libDeltaRobot.a -lActuatorController -lpthread -Wl,-rpath,/home/zhonghang/innfos_actuator/innfos-cpp-sdk/example/../sdk/lib/linux_x86_64 

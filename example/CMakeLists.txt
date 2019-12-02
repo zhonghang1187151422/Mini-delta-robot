@@ -14,6 +14,11 @@ SET(EXAMPLE_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/04_actuatorSetting.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/05a_feedback_sync.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/05b_feedback_asyc.cpp
+  
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/actuator_test1.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/deltarobot_test1.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/deltarobot_posctl_test1.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/advanced/deltarobot_velctl_test1.cpp
 )
 
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -35,17 +40,24 @@ elseif(UNIX)
 	link_directories(${LIB_DIR})
 endif()
 
-include_directories(${INCLUDE_DIR})
-include_directories(${INCLUDE_DIR}/asio)
-include_directories(${INCLUDE_DIR}/serial/include)
-
-
 add_compile_options(-std=c++11)
 add_compile_options(-fPIC)
 #add_compile_options(-DQT_NO_VERSION_TAGGING)
 add_compile_options(-pthread)
 add_compile_options(-DASIO_STANDALONE)
 add_compile_options(-DASIO_HAS_STD_CHRONO)
+
+# add library
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/../deltarobot/src DIR_DELTAROBOT_SRCS)
+add_library(DeltaRobot ${DIR_DELTAROBOT_SRCS})
+target_link_libraries(DeltaRobot ActuatorController pthread)
+
+
+include_directories(${INCLUDE_DIR})
+include_directories(${INCLUDE_DIR}/asio)
+include_directories(${INCLUDE_DIR}/serial/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../deltarobot/include)
+
 
 foreach(EXAMPLE ${EXAMPLE_SOURCES})
     get_filename_component(EX_NAME ${EXAMPLE} NAME_WE)
@@ -58,7 +70,7 @@ foreach(EXAMPLE ${EXAMPLE_SOURCES})
         $<TARGET_FILE_DIR:${EX_NAME}>
         )
     elseif(UNIX)
-        target_link_libraries(${EX_NAME} ActuatorController pthread)
+        target_link_libraries(${EX_NAME} ActuatorController pthread DeltaRobot)
     endif()
 endforeach(EXAMPLE ${EXAMPLE_SOURCES})
 
