@@ -5,10 +5,13 @@
 （2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类 <br>
 （3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类 <br>
 
-## 环境依赖
-linux ubuntu16.04
+## 机器人配置
+机器人由3个QDD Lite-NE30-36电机和1个QDD Lite-EL20-36电机组成。3个QDD Lite-NE30-36电机安装在基座上呈120度排列，其电机ID分别为11、12、13。QDD Lite-EL20-36电机安装在末端，其ID为14。
 
-## 安装使用
+## 环境依赖
+LINUX Ubuntu16.04
+
+## 安装编译
 （1）将软件包下载到本地 <br>
 ```Bash
 git clone https://github.com/zhonghang1187151422/Mini-delta-robot.git
@@ -17,17 +20,26 @@ git clone https://github.com/zhonghang1187151422/Mini-delta-robot.git
 ```Bash
 cd ./example
 ```
+（3）在该路径下新建一个build文件夹，并切换路径到此文件夹
+```Bash
+mkdir ./build
+cd ./build
+```
 （3）编译代码
 ```Bash
-cmake CMakeLists.txt
+cmake ..
 make
 ```
-输入命令执行完成后，在该目录下会生成一个bin文件夹，该目录存放了生成的示例程序。
-（4）测试程序
-先进入bin文件夹：
+
+编译完成后会在build文件夹下生成一个bin文件夹，下面就是示例代码的可执行文件。
+
+## 测试
+提供两个关于Delta机器人的测试可执行文件，deltarobot_posctl_test1和deltarobot_velctl_test1，一个是位置控制，一个是速度控制。
+（1）切换到bin文件夹下并
 ```Bash
 cd ./bin
 ```
+（2）运行程序
 比如要测试Delta机器人的位置控制功能，运行为：
 ```Bash
 ./deltarobot_posctl_test1

@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libDeltaRobotControl.a  CMakeFiles/DeltaRobotControl_static.dir/src/DeltaRobotKinematics.cpp.o CMakeFiles/DeltaRobotControl_static.dir/src/DeltaRobotMath.cpp.o CMakeFiles/DeltaRobotControl_static.dir/src/DeltaRobotControl.cpp.o CMakeFiles/DeltaRobotControl_static.dir/src/DeltaRobotMotionPlanning.cpp.o
+/usr/bin/ranlib lib/libDeltaRobotControl.a

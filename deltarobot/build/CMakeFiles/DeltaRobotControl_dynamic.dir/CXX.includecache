@@ -1,0 +1,116 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../sdk/include/CSignal.hpp
+functional
+-
+map
+-
+vector
+-
+
+../../sdk/include/actuatorcontroller.h
+actuatorcontroller_global.h
+../../sdk/include/actuatorcontroller_global.h
+functional
+-
+vector
+-
+actuatordefine.h
+../../sdk/include/actuatordefine.h
+iostream
+-
+typeindex
+-
+typeinfo
+-
+CSignal.hpp
+../../sdk/include/CSignal.hpp
+
+../../sdk/include/actuatorcontroller_global.h
+
+../../sdk/include/actuatordefine.h
+
+../include/DeltaRobotControl.h
+vector
+-
+DeltaRobotDataType.h
+../include/DeltaRobotDataType.h
+DeltaRobotKinematics.h
+../include/DeltaRobotKinematics.h
+DeltaRobotMotionPlanning.h
+../include/DeltaRobotMotionPlanning.h
+actuatorcontroller.h
+../include/actuatorcontroller.h
+
+../include/DeltaRobotDataType.h
+vector
+-
+
+../include/DeltaRobotKinematics.h
+vector
+-
+iostream
+-
+DeltaRobotDataType.h
+../include/DeltaRobotDataType.h
+
+../include/DeltaRobotMath.h
+cmath
+-
+
+../include/DeltaRobotMotionPlanning.h
+vector
+-
+iostream
+-
+DeltaRobotDataType.h
+../include/DeltaRobotDataType.h
+
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotControl.cpp
+iostream
+-
+iomanip
+-
+string.h
+-
+algorithm
+-
+thread
+-
+chrono
+-
+DeltaRobotControl.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotControl.h
+DeltaRobotKinematics.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotKinematics.h
+DeltaRobotMotionPlanning.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotMotionPlanning.h
+actuatorcontroller.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/actuatorcontroller.h
+
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotKinematics.cpp
+cmath
+-
+DeltaRobotKinematics.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotKinematics.h
+DeltaRobotMath.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotMath.h
+
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotMath.cpp
+DeltaRobotMath.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotMath.h
+
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotMotionPlanning.cpp
+cmath
+-
+DeltaRobotMotionPlanning.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotMotionPlanning.h
+DeltaRobotControl.h
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/src/DeltaRobotControl.h
+

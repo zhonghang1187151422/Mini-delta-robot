@@ -4,7 +4,6 @@
 #include <signal.h>
 #include <string.h>
 #include <chrono>
-#include "DeltaRobotKinematics.h"
 #include "DeltaRobotControl.h"
 
 

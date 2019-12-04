@@ -1,0 +1,4 @@
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/build/CMakeFiles/edit_cache.dir
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/build/CMakeFiles/rebuild_cache.dir
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/build/CMakeFiles/DeltaRobotControl_dynamic.dir
+/home/zhonghang/Desktop/delta robot using innfos actuators/deltarobot/build/CMakeFiles/DeltaRobotControl_static.dir
