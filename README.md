@@ -34,7 +34,7 @@ make
 编译完成后会在build文件夹下生成一个bin文件夹，下面就是示例代码的可执行文件。
 
 ## 测试
-提供两个关于Delta机器人的测试可执行文件，deltarobot_posctl_test1和deltarobot_velctl_test1，一个是位置控制，一个是速度控制。
+提供两个关于Delta机器人的测试可执行文件，deltarobot_posctl_test1和deltarobot_velctl_test1，一个是位置控制，一个是速度控制。<br>
 （1）切换到bin文件夹下并
 ```Bash
 cd ./bin
